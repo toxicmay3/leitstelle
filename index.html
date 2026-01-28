@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leitstelle Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Leitstelle</h1>
+
+    <div id="status" class="status">Nicht eingeloggt</div>
+
+    <form id="loginForm">
+      <label>E-Mail</label>
+      <input id="email" type="email" required placeholder="name@server.de" />
+
+      <label>Passwort</label>
+      <input id="password" type="password" required placeholder="••••••••" />
+
+      <button type="submit">Einloggen</button>
+    </form>
+
+    <button id="logoutBtn" class="secondary" style="display:none;">Logout</button>
+    <p class="hint">Accounts legst du in Supabase unter Authentication → Users an.</p>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
